@@ -1,0 +1,1 @@
+ select left(zipcode,2) as "Departement", count(*) as "Nombre d'utilisateurs" from user group by Departement order by Departement asc;

@@ -1,0 +1,1 @@
+select count(*) as "Nombre de films 'Mystery'" from movie as m join movie_genre as mg on mg.id_movie=m.id join distributor as d on d.id =m.id_distributor join genre as g on g.id= mg.id_genre where g.name="Mystery" and (d.name="Paramount Pictures" or d.name ="Columbia Pictures" or m.title like "T%");

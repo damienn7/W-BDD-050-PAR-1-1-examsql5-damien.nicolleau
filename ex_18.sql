@@ -1,0 +1,1 @@
+select count(*) as "Nombre de membres", round(avg(round(year(now())-year(u.birthdate)))) as "Age moyen" from membership as m join user as u on u.id = m.id_user; 

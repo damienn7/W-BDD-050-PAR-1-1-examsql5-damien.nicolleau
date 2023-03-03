@@ -1,0 +1,1 @@
+select title as "Titre du film" from movie where left(title,1) between "O" and "T" order by title desc;

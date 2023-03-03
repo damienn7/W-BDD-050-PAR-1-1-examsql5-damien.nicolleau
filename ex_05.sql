@@ -1,0 +1,1 @@
+SELECT CONCAT(SUBSTR(email,1,LENGTH(email)-2), 'bzh') AS "Meilleurs emails" FROM user ORDER BY email DESC;

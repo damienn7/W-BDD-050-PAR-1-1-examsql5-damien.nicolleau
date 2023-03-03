@@ -1,0 +1,1 @@
+select lastname as "Nom de famille", count(*) as "Nombre de membres" from user group by lastname having count(*)>1;
